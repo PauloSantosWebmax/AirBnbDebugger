@@ -1,0 +1,42 @@
+<div id="scrap-property">
+
+  <!-- controlls -->
+  <div class="col-md-6 col-md-offset-3">
+    <div class="form-group">
+      <label for="propertySearch">Property ID or Property URL</label>
+      <input type="text" name="propertySearch" id="propertySearch" class="form-control" v-model="propertySearch">
+    </div>
+    <button class="btn btn-sm btn-primary" @click="startScrapProperty">
+      Scrap
+    </button>
+  </div>
+  
+  <!-- loader -->
+  <div class="col-md-6 col-md-offset-3" id="loader" v-if="showLoader">
+    <img src="static/loader.gif"> Loading...
+  </div>
+
+  <!-- results -->
+  <div class="col-md-6 col-md-offset-3" id="propertyResults" v-if="!showLoader">
+    <div class="panel panel-default" v-if="property">
+      <div class="panel-heading">
+        {{ property.name }}
+      </div>
+      <div class="panel-body">
+        <img :src="property.picture_url" class="img-responsive">
+        <p><br><strong>Price:</strong> {{ property.price_native }} €</p>
+        <p><strong>Description:</strong><br><br> {{ property.description }} €</p>
+        <p><br><strong>Summary:</strong> {{ property.summary }}</p>
+        <p><br><strong>Access:</strong> {{ property.access }}</p>
+        <p><strong>Owner:</strong> {{ property.user.user.first_name }}</p>
+        <p><strong>Bathrooms:</strong> {{ property.bathrooms }}</p>
+        <p><strong>Beds:</strong> {{ property.beds }}</p>
+      </div>
+      <div class="panel-footer">
+        <span>ID: {{ property.id }}</span> <button class="btn btn-sm btn-primary pull-right" @click="saveAsJsonFile">save as json</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+</div>

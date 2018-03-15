@@ -1,0 +1,10 @@
+{
+  "name": "airbnbscrappertests",
+  "description": "A Vue.js project",
+  "main": "index.html",
+  "authors": [
+    "Paulo Santos <tm.paulo.santos@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}

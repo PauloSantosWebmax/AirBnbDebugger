@@ -1,0 +1,24 @@
+{
+  "name": "AirBnb_Debugger",
+  "version": "1.0.0",
+  "description": "Simple airBnb property scrapper debugger.",
+  "main": "index.js",
+  "scripts": {
+    "install_api_packages": "cd ./airbnbScrapperAPI/ && npm install",
+    "install_vue_packages": "cd ./airbnbScrapperDebugger/ && npm install",
+    "start_api": "cd ./airbnbScrapperAPI/ && npm run dev",
+    "start_frontend": "cd ./airbnbScrapperDebugger/ && npm run dev",
+    "dev": "concurrently \"npm run start_frontend\" \"npm run start_api\""
+  },
+  "keywords": [
+    "airbnb",
+    "tester",
+    "scrapper",
+    "debugger"
+  ],
+  "author": "Paulo Santos <tm.paulo.santos@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}

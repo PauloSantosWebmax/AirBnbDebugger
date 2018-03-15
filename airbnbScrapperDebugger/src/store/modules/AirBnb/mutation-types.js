@@ -1,0 +1,5 @@
+
+export const AIRBNB_LOADING = 'AIRBNB_LOADING'
+export const AIRBNB_SET = 'AIRBNB_SET'
+export const AIRBNB_RESET = 'AIRBNB_RESET'
+export const AIRBNB_ERROR = 'AIRBNB_ERROR'
