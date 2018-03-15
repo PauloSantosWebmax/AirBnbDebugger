@@ -19,4 +19,6 @@ Run project:
 npm run dev
 ```
 
+Then go to: http://localhost:8080/
+
 ***Author: Paulo Santos***
