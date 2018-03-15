@@ -10,7 +10,7 @@ npm install
 npm run install_api_packages
 
 // install vue dependencies
-npm run install_api_packages
+npm run install_vue_packages
 ```
 
 Run project:
